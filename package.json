@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "chai": "^4.3.4",
     "mocha": "^8.3.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha './src/test/**/*.js' --recursive"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kangaoxioashi/test.git"
