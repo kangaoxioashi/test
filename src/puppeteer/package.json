@@ -10,12 +10,13 @@
     "express": "4.x",
     "express-static": "1.x",
     "mocha": "latest",
-    "puppeteer": "1.17.0",
     "serve": "11.x"
   },
   "engines": {
     "nodejs": ">= 8.0.0"
   },
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  }
 }
