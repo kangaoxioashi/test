@@ -24,7 +24,7 @@ describe('my app', function () {
   });
   // 1. 第1步填写表单数据
   it('1.模拟已经登录', async function () {
-
+    //
     await page.setCookie({
       name: 'token',
       value: '9572d486975656e55006faf480821e28',
@@ -33,6 +33,7 @@ describe('my app', function () {
       path: '/',
       //expires: '2031-04-10T10:02:31.928Z',
     });
+    // 动态填写表单
   });
   // 2. 第2步打开页面
   it('2. 打开填写爱车信息页面', async function () {
