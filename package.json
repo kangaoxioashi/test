@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha './src/test/**/*.js' --recursive",
-    "puppeteer": ""
+    "zip": "node ./zip.js -u a -t b"
   },
 
   "repository": {
