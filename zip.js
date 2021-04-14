@@ -3,5 +3,7 @@ program.option('-b, --branch <string>', 'Build branch')
   .option('-m, --message <string>', 'Commit Message');
 program.parse(process.argv);
 const options = program.opts();
-console.log('1111', options);
+console.log('11111', options);
+
+
 
