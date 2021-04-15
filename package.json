@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "adm-zip": "^0.5.5",
     "chai": "^4.3.4",
     "commander": "^7.2.0",
+    "fs-extra": "^9.1.0",
     "mocha": "^8.3.2"
   },
   "scripts": {
