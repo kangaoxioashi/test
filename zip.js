@@ -17,7 +17,7 @@ zip.writeZip('./code.zip');
 fse.copySync('./code.zip', '../code.zip');
 //3. unzip
 var unzip = new AdmZip('../code.zip');
-unzip.extractAllTo("./code/", true);
+unzip.extractAllTo("../code/", true);
 
 
 
