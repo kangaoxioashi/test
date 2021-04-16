@@ -20,4 +20,4 @@ exports.Ajax = function () {
   })
 };
 
-console.log('11111121');
+console.log('11121');
