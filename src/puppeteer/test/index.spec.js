@@ -22,6 +22,7 @@ describe('my app', function () {
     // 打开首页
     await page.goto(url, { timeout: 0 });
     const title = await page.title();
+    //await page.waitForNavigation({});
     //await page.waitForTimeout(2000);
     await page.screenshot({ path: `1.${title}.full.png`, fullPage: true });
   });
@@ -84,7 +85,7 @@ describe('my app', function () {
     });
     // 将数据存储, 接口扩展思考，这里能干什么？
     const data = await res.json();
-    await fs.outputJson('data.json', data);
+    await fse.outputJson('data.json', data);
 
     await page.screenshot({ path: `4-2.${title}.full.png`, fullPage: true });
 
@@ -106,7 +107,7 @@ describe('my app', function () {
     this.timeout(100000);
     
     
-    assert.ok(res.ok());
+    //assert.ok(res.ok());
   });
   //const ajaxResponse = await page.waitForResponse(response => response.url() === 'https://example.com' && response.status() === 200);
 });

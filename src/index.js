@@ -4,13 +4,16 @@ exports.Add = function (a, b) {
 exports.Ajax = function () {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (Math.random() * 10 >= 5) {
+      const val = Math.round(Math.random() * 10);
+      if (val >= 5) {
         resolve({
-          success: true
+          success: true,
+          val,
         });
       } else {
         resolve({
-          success: false
+          success: false,
+          val,
         });
       }
     }, 1000);

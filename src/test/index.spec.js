@@ -1,17 +1,17 @@
 const chai = require('chai');
-const { assert } = chai;
+const { assert, expect } = chai;
 
 const { Add, Ajax } = require('../index');
-describe('hooks', function() {
-  before(function() {
+describe('hooks', function () {
+  before(function () {
     // runs before all tests in this block
     //console.log('开始测试');
   });
-  beforeEach(function() {
+  beforeEach(function () {
     // runs before each test in this block
     //console.log('每一个测试开始前执行');
   });
-  after(function() {
+  after(function () {
     //console.log('测试结束');
   });
   describe('Array', function () {
@@ -36,8 +36,9 @@ describe('hooks', function() {
     describe('Ajax', function () {
       it('should success', function (done) {
         Ajax().then((res) => {
-          console.log('111', res.success);
-          assert.ok(res.success);
+          console.log('111', res.success, res.val);
+          //assert.ok(res.success);
+          expect(res.val).to.be.above(5);
           done();
         })
       });
